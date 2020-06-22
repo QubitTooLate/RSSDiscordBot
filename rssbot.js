@@ -33,7 +33,7 @@
                         }
 
                         if (
-                            !entry.title[0]._.contains("\"De zevende dag\"")
+                            !entry.title[0]._.includes("\"De zevende dag\"")
                             ) {
                             fields.push({
                                 "name": entry.title[0]._,
