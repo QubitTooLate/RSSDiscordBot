@@ -73,7 +73,7 @@
     }
 
     let artikelDatums = [ new Date(2020, 5, 21, 20), new Date(2020, 5, 21, 20), new Date(2020, 5, 21, 20) ];
-    async function checkVRTArtiekels() {
+    async function checkVRTArtikels() {
         let t0 = VRTArtikelsNaarDiscord(
             "https://www.vrt.be/vrtnws/nl.rss.politiek.xml",
             "https://discordapp.com/api/webhooks/...",
@@ -99,6 +99,6 @@
         console.log(`Checked artikels ${artikelDatums[0].toUTCString()}, ${artikelDatums[1].toUTCString()}, ${artikelDatums[2].toUTCString()}.`);
     }
 
-    checkVRTArtiekels();
-    setInterval(checkVRTArtiekels, 1000 * 60 * 60);
+    checkVRTArtikels();
+    setInterval(checkVRTArtikels, 1000 * 60 * 60);
 })());
